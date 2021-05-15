@@ -2,6 +2,7 @@
 
 # hive table for mens items table
 
+```
 create table mens_products_full (
 category				int,
 subcategory				string,
@@ -31,4 +32,5 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
 TBLPROPERTIES("skip.header.line.count"="1");
-LOAD DATA LOCAL INPATH '/Users/jsenjaliya/Downloads/mens_items.csv' OVERWRITE INTO TABLE mens_products_full;
+
+LOAD DATA LOCAL INPATH '/Users/jsenjaliya/Downloads/mens_items.csv' OVERWRITE INTO TABLE mens_products_full;```
